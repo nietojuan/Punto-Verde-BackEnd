@@ -1,0 +1,12 @@
+[
+{"type":"header","version":"5.2.0","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"punto_verde"},
+{"type":"table","name":"usuarios","database":"punto_verde","data":
+[
+{"id":"1","nombre":"Juan Nieto","email":"jn@x.com","password":"123456","role":"1"},
+{"id":"2","nombre":"Isis Press","email":"ip@x.com","password":"123456","role":null},
+{"id":"3","nombre":"Bandido NN","email":"bn@x.com","password":"123456","role":null},
+{"id":"4","nombre":"Mora NN","email":"mn@x.com","password":"123456","role":null}
+]
+}
+]
