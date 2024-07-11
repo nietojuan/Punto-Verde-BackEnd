@@ -1,12 +1,47 @@
 [
 {"type":"header","version":"5.2.0","comment":"Export to JSON plugin for PHPMyAdmin"},
 {"type":"database","name":"punto_verde"},
-{"type":"table","name":"usuarios","database":"punto_verde","data":
+{"type":"table","name":"categorias","database":"punto_verde","data":
 [
-{"id":"1","nombre":"Juan Nieto","email":"jn@x.com","password":"123456","role":"1"},
-{"id":"2","nombre":"Isis Press","email":"ip@x.com","password":"123456","role":null},
-{"id":"3","nombre":"Bandido NN","email":"bn@x.com","password":"123456","role":null},
-{"id":"4","nombre":"Mora NN","email":"mn@x.com","password":"123456","role":null}
+{"id":"1","nombre":"tartas","fecha":"2024-07-11 02:44:15"},
+{"id":"2","nombre":"crepas","fecha":"2024-07-11 02:44:15"},
+{"id":"3","nombre":"ensaladas","fecha":"2024-07-11 02:44:15"}
+]
+}
+,{"type":"table","name":"datos_cliente","database":"punto_verde","data":
+[
+{"id":"1","nombre":"Juan Nieto","domicilio":"marmol 1139","localidad":"dorrego","telefono":"261523232","usuario_id":"1","fecha":"2024-07-11 06:15:10"},
+{"id":"2","nombre":"Isis Press","domicilio":"las glicinas 2314","localidad":"las heras","telefono":"2615641215","usuario_id":"2","fecha":"2024-07-11 06:15:10"},
+{"id":"3","nombre":"Bandido NN","domicilio":"maipu 323 piso 1 dpto b","localidad":"ciudad de mendoza","telefono":"2613335622","usuario_id":"3","fecha":"2024-07-11 06:15:10"},
+{"id":"4","nombre":"Mora NN","domicilio":"aconcagua 66563","localidad":"potrerillos","telefono":"261565611","usuario_id":"4","fecha":"2024-07-11 06:15:10"}
+]
+}
+,{"type":"table","name":"productos","database":"punto_verde","data":
+[
+{"id":"1","nombre":"calabaza asada","precio":"2700","stock":"4","categoria_id":null,"fecha":"2024-07-11 02:49:11"},
+{"id":"29","nombre":"zapallito","precio":"2700","stock":"5","categoria_id":"1","fecha":"2024-07-11 02:59:39"},
+{"id":"30","nombre":"zuccini","precio":"2700","stock":"3","categoria_id":"1","fecha":"2024-07-11 02:59:39"},
+{"id":"31","nombre":"mix de verduras","precio":"2700","stock":"6","categoria_id":"1","fecha":"2024-07-11 02:59:39"},
+{"id":"32","nombre":"acelga","precio":"2700","stock":"9","categoria_id":"1","fecha":"2024-07-11 02:59:39"},
+{"id":"33","nombre":"aclega y choclo","precio":"2700","stock":"2","categoria_id":"1","fecha":"2024-07-11 02:59:39"},
+{"id":"34","nombre":"acelga y calabaza","precio":"2700","stock":"1","categoria_id":"1","fecha":"2024-07-11 02:59:39"},
+{"id":"35","nombre":"mediterranea","precio":"2900","stock":"3","categoria_id":"1","fecha":"2024-07-11 02:59:39"},
+{"id":"36","nombre":"brocoli","precio":"2900","stock":"1","categoria_id":"1","fecha":"2024-07-11 02:59:39"},
+{"id":"37","nombre":"sufle de espinaca","precio":"3500","stock":"2","categoria_id":null,"fecha":"2024-07-11 02:59:39"},
+{"id":"38","nombre":"acelga","precio":"2900","stock":"3","categoria_id":"2","fecha":"2024-07-11 03:08:52"},
+{"id":"39","nombre":"zanahoria","precio":"2900","stock":"5","categoria_id":"2","fecha":"2024-07-11 03:08:52"},
+{"id":"40","nombre":"proteica","precio":"2100","stock":"2","categoria_id":"3","fecha":"2024-07-11 03:12:55"},
+{"id":"41","nombre":"siete colores","precio":"1900","stock":"5","categoria_id":"3","fecha":"2024-07-11 03:12:55"},
+{"id":"42","nombre":"quinoa mix","precio":"2300","stock":"2","categoria_id":"3","fecha":"2024-07-11 03:12:55"},
+{"id":"43","nombre":"mix verduras","precio":"1900","stock":"4","categoria_id":"3","fecha":"2024-07-11 03:12:55"}
+]
+}
+,{"type":"table","name":"usuarios","database":"punto_verde","data":
+[
+{"id":"1","nombre":"Juan Nieto","email":"jn@x.com","password":"123456","role":"1","fecha_registro":"2024-07-11 02:34:04"},
+{"id":"2","nombre":"Isis Press","email":"ip@x.com","password":"123456","role":null,"fecha_registro":"2024-07-11 02:34:04"},
+{"id":"3","nombre":"Bandido NN","email":"bn@x.com","password":"123456","role":null,"fecha_registro":"2024-07-11 02:34:04"},
+{"id":"4","nombre":"Mora NN","email":"mn@x.com","password":"123456","role":null,"fecha_registro":"2024-07-11 02:34:04"}
 ]
 }
 ]
