@@ -3,15 +3,15 @@ const app = express();
 
 app.use(express.json());
 
-const productosRouter = require("./routes/productos.router");
-const categoriasRouter = require("./routes/categorias.router");
-const usuariosRouter = require("./routes/usuarios.router");
-const datosClientesRouter = require("./routes/datosClienetes.router");
+// const productosRouter = require("./routes/productos.router");
+// const categoriasRouter = require("./routes/categorias.router");
+// const usuariosRouter = require("./routes/usuarios.router");
+// const datosClientesRouter = require("./routes/datosClienetes.router");
 
-app.use("/productos", productosRouter);
-app.use("/categorias", categoriasRouter);
-app.use("/usuarios", usuariosRouter);
-app.use("/datosClientes", datosClientesRouter);
+// app.use("/productos", productosRouter);
+// app.use("/categorias", categoriasRouter);
+// app.use("/usuarios", usuariosRouter);
+// app.use("/datosClientes", datosClientesRouter);
 
 app.get("/", (req, res) => {
   res.send("Punto Verde BackEnd!!");
