@@ -1,0 +1,47 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"juannieto_puntoverde_backend"},
+{"type":"table","name":"categorias","database":"juannieto_puntoverde_backend","data":
+[
+{"id_categoria":"1","nombre":"tartas"},
+{"id_categoria":"2","nombre":"crepas"},
+{"id_categoria":"3","nombre":"ensaladas"}
+]
+}
+,{"type":"table","name":"datos_cliente","database":"juannieto_puntoverde_backend","data":
+[
+{"id_datos_cliente":"1","nombre":"Juan Nieto","apellido":null,"domicilio":"marmol 1139","localidad":"dorrego","telefono":"261523232","id_usuario":"1"},
+{"id_datos_cliente":"2","nombre":"Isis Press","apellido":null,"domicilio":"las glicinas 2314","localidad":"las heras","telefono":"2615641215","id_usuario":"2"},
+{"id_datos_cliente":"3","nombre":"Bandido NN","apellido":null,"domicilio":"maipu 323 piso 1 dpto b","localidad":"ciudad de mendoza","telefono":"2613335622","id_usuario":"3"},
+{"id_datos_cliente":"4","nombre":"Mora NN","apellido":null,"domicilio":"aconcagua 66563","localidad":"potrerillos","telefono":"261565611","id_usuario":"4"}
+]
+}
+,{"type":"table","name":"productos","database":"juannieto_puntoverde_backend","data":
+[
+{"id_producto":"1","nombre":"calabaza asada","precio":"2700","stock":"4","id_categoria":null},
+{"id_producto":"29","nombre":"zapallito","precio":"2700","stock":"5","id_categoria":"1"},
+{"id_producto":"30","nombre":"zuccini","precio":"2700","stock":"3","id_categoria":"1"},
+{"id_producto":"31","nombre":"mix de verduras","precio":"2700","stock":"6","id_categoria":"1"},
+{"id_producto":"32","nombre":"acelga","precio":"2700","stock":"9","id_categoria":"1"},
+{"id_producto":"33","nombre":"aclega y choclo","precio":"2700","stock":"2","id_categoria":"1"},
+{"id_producto":"34","nombre":"acelga y calabaza","precio":"2700","stock":"1","id_categoria":"1"},
+{"id_producto":"35","nombre":"mediterranea","precio":"2900","stock":"3","id_categoria":"1"},
+{"id_producto":"36","nombre":"brocoli","precio":"2900","stock":"1","id_categoria":"1"},
+{"id_producto":"37","nombre":"sufle de espinaca","precio":"3500","stock":"2","id_categoria":null},
+{"id_producto":"38","nombre":"acelga","precio":"2900","stock":"3","id_categoria":"2"},
+{"id_producto":"39","nombre":"zanahoria","precio":"2900","stock":"5","id_categoria":"2"},
+{"id_producto":"40","nombre":"proteica","precio":"2100","stock":"2","id_categoria":"3"},
+{"id_producto":"41","nombre":"siete colores","precio":"1900","stock":"5","id_categoria":"3"},
+{"id_producto":"42","nombre":"quinoa mix","precio":"2300","stock":"2","id_categoria":"3"},
+{"id_producto":"43","nombre":"mix verduras","precio":"1900","stock":"4","id_categoria":"3"}
+]
+}
+,{"type":"table","name":"usuarios","database":"juannieto_puntoverde_backend","data":
+[
+{"id_usuario":"1","nombre":"Juan Nieto","email":"jn@x.com","password":"123456"},
+{"id_usuario":"2","nombre":"Isis Press","email":"ip@x.com","password":"123456"},
+{"id_usuario":"3","nombre":"Bandido NN","email":"bn@x.com","password":"123456"},
+{"id_usuario":"4","nombre":"Mora NN","email":"mn@x.com","password":"123456"}
+]
+}
+]
