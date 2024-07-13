@@ -88,8 +88,8 @@ const actualizar = (req, res) => {
 // Eliminar.
 
 const eliminar = (req, res) => {
-  const { id_contacto } = req.params;
-  const sql = "DELETE FROM contacto WHERE id_usuario = ?";
+  const { id_usuario } = req.params;
+  const sql = "DELETE FROM usuarios  WHERE id_usuario = ?";
 
   db.query(sql, [id_usuario], (error, result) => {
     if (error) {
