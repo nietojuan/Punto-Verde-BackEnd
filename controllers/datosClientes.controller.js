@@ -3,7 +3,7 @@ const db = require("../db/db");
 // Listado de datos.
 
 const listadoDeDatos = (req, res) => {
-  const sql = "SELECT * FROM datos_clientes";
+  const sql = "SELECT * FROM datos_cliente";
   db.query(sql, (error, rows) => {
     if (error) {
       console.error("Error de la Base de Datos ", error);
