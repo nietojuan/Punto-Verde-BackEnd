@@ -69,7 +69,7 @@ const actualizar = (req, res) => {
 
   const sql = "UPDATE categorias SET nombre = ? WHERE id_categoria = ?";
 
-  db.query(sql, [id_categoria, nombre], (error, result) => {
+  db.query(sql, [nombre, id_categoria], (error, result) => {
     if (error) {
       console.error("Error de consulta a la base de datos:", error);
       return res.status(500).json({ error: "Intente más tarde" });
