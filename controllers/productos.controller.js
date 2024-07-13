@@ -19,7 +19,7 @@ const listadoDeProductos = (req, res) => {
 const obtenerPorId = (req, res) => {
   console.log(req.params);
   const { id_producto } = req.params;
-  const sql = "SELECT * FROM productos WHERE id_productos = ?";
+  const sql = "SELECT * FROM productos WHERE id_producto = ?";
   db.query(sql, [id_producto], (error, rows) => {
     if (error) {
       console.error("Error en la base de datos:", error);
@@ -67,15 +67,15 @@ const agregar = (req, res) => {
 // Actualizar.
 
 const actualizar = (req, res) => {
-  const { id_productos } = req.params;
+  const { id_producto } = req.params;
   const { nombre, precio, stock, id_categoria } = req.body;
 
   const sql =
-    "UPDATE productos SET nombre = ?, precio = ?, stock = ?, id_categoria = ?,  WHERE id_productos = ?";
+    "UPDATE productos SET nombre = ?, precio = ?, stock = ?, id_categoria = ?  WHERE id_producto = ?";
 
   db.query(
     sql,
-    [nombre, precio, stock, id_categoria, id_productos],
+    [nombre, precio, stock, id_categoria, id_producto],
     (error, result) => {
       if (error) {
         console.error("Error de consulta a la base de datos:", error);
@@ -93,10 +93,10 @@ const actualizar = (req, res) => {
 // Eliminar.
 
 const eliminar = (req, res) => {
-  const { id_productos } = req.params;
-  const sql = "DELETE FROM productos WHERE id_productos = ?";
+  const { id_producto } = req.params;
+  const sql = "DELETE FROM productos WHERE id_producto = ?";
 
-  db.query(sql, [id_productos], (error, result) => {
+  db.query(sql, [id_producto], (error, result) => {
     if (error) {
       console.error("Error de consulta a la base de datos:", error);
       return res.status(500).json({ error: "Intente más tarde" });
