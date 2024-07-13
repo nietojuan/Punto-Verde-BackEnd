@@ -8,7 +8,7 @@ app.use(express.json());
 const productosRouter = require("./routes/productos.router");
 const categoriasRouter = require("./routes/categorias.router");
 const usuariosRouter = require("./routes/usuarios.router");
-const datosClientesRouter = require("./routes/datosClienetes.router");
+const datosClientesRouter = require("./routes/datosClientes.router");
 
 app.use("/productos", productosRouter);
 app.use("/categorias", categoriasRouter);
@@ -19,6 +19,6 @@ app.get("/", (req, res) => {
   res.send("Punto Verde BackEnd!!");
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8100;
 
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
