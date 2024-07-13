@@ -17,9 +17,9 @@ const listadoDeProductos = (req, res) => {
 // Productos por id.
 
 const obtenerPorId = (req, res) => {
-  console.log(req.params);
   const { id_producto } = req.params;
   const sql = "SELECT * FROM productos WHERE id_producto = ?";
+
   db.query(sql, [id_producto], (error, rows) => {
     if (error) {
       console.error("Error en la base de datos:", error);
@@ -71,7 +71,7 @@ const actualizar = (req, res) => {
   const { nombre, precio, stock, id_categoria } = req.body;
 
   const sql =
-    "UPDATE productos SET nombre = ?, precio = ?, stock = ?, id_categoria = ?  WHERE id_producto = ?";
+    "UPDATE productos SET nombre = ?, precio = ?, stock = ?, id_categoria = ? WHERE id_producto = ?";
 
   db.query(
     sql,
