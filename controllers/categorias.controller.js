@@ -39,10 +39,10 @@ const obtenerPorId = (req, res) => {
 // Agregar.
 
 const agregar = (req, res) => {
-  const { categoria } = req.body;
-  const sql = "INSERT INTO categorias (categoria) VALUES (?)";
+  const { nombre } = req.body;
+  const sql = "INSERT INTO categorias (nombre) VALUES (?)";
 
-  db.query(sql, [categoria], (error, result) => {
+  db.query(sql, [nombre], (error, result) => {
     if (error) {
       console.error("Error de consulta a la base de datos:", error);
       return res.status(500).json({ error: "Intente más tarde" });
@@ -50,7 +50,7 @@ const agregar = (req, res) => {
 
     const categoria = {
       id_categoria: result.insertId,
-      categoria,
+      nombre,
     };
 
     res.status(201).json(categoria);
@@ -61,15 +61,15 @@ const agregar = (req, res) => {
 
 const actualizar = (req, res) => {
   const { id_categoria } = req.params;
-  const { categoria } = req.body;
+  const { nombre } = req.body;
 
-  if (!categoria) {
+  if (!nombre) {
     return res.status(400).json({ error: "Faltan campos requeridos" });
   }
 
-  const sql = "UPDATE categorias SET categoria = ? WHERE id_categoria = ?";
+  const sql = "UPDATE categorias SET nombre = ? WHERE id_categoria = ?";
 
-  db.query(sql, [categoria, id_categoria], (error, result) => {
+  db.query(sql, [id_categoria, nombre], (error, result) => {
     if (error) {
       console.error("Error de consulta a la base de datos:", error);
       return res.status(500).json({ error: "Intente más tarde" });
